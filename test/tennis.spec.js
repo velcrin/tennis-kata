@@ -24,7 +24,7 @@ describe('Game', function () {
 
 describe('Match', function () {
 
-    it('should follow the rules of the tennis scores', khan({
+    it('should follow the rules of tennis scores', khan({
         before: function (initial) {
             this.match = tennis.game.start("Federer", "Nadal", initial);
         },
