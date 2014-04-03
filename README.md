@@ -1,4 +1,4 @@
-# tennis-kata [![Build Status](https://secure.travis-ci.org/Vincent/tennis-kata-js.png?branch=master)](http://travis-ci.org/Vincent/tennis-kata-js)
+# tennis-kata [![Build Status](https://travis-ci.org/velcrin/tennis-kata.svg?branch=master)](https://travis-ci.org/velcrin/tennis-kata)
 
 Proposition of solution for the tennis kata wrote in JavaScript. Also illustrate a bdd library inspired by Spock.
 
