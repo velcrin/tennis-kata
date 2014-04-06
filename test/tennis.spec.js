@@ -28,20 +28,20 @@ describe('Match', function () {
         before: function (initial) {
             this.match = tennis.game.start("Federer", "Nadal", initial);
         },
-        when: function (scorer) {
-            this.match[scorer].score();
+        "When ${player} score": function (player) {
+            this.match[player].score();
         },
-        then: function (result) {
+        "Then the match score should be ${result}": function (result) {
             this.match.score().should.eql(result);
         },
-        where: [
-            { initial: [0, 0],    scorer: "Federer",  result: [15, 0] },
-            { initial: [0, 0],    scorer: "Nadal",    result: [0, 15] },
-            { initial: [30, 30],  scorer: "Federer",  result: [40, 30] },
-            { initial: [40, 40],  scorer: "Nadal",    result: [40, "A"] },
-            { initial: [40, 30],  scorer: "Federer",  result: ["Winner", 30] },
-            { initial: ["A", 40], scorer: "Federer",  result: ["Winner", 40] },
-            { initial: ["A", 40], scorer: "Nadal",    result: "Deuce" }
+        "Where initial, player & result follow the given values": [
+            { initial: [0, 0],    player: "Federer",  result: [15, 0] },
+            { initial: [0, 0],    player: "Nadal",    result: [0, 15] },
+            { initial: [30, 30],  player: "Federer",  result: [40, 30] },
+            { initial: [40, 40],  player: "Nadal",    result: [40, "A"] },
+            { initial: [40, 30],  player: "Federer",  result: ["Winner", 30] },
+            { initial: ["A", 40], player: "Federer",  result: ["Winner", 30] },
+            { initial: ["A", 40], player: "Nadal",    result: "Deuce" }
         ]
 
     }));
