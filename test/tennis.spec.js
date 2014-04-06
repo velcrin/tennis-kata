@@ -40,7 +40,7 @@ describe('Match', function () {
             { initial: [30, 30],  player: "Federer",  result: [40, 30] },
             { initial: [40, 40],  player: "Nadal",    result: [40, "A"] },
             { initial: [40, 30],  player: "Federer",  result: ["Winner", 30] },
-            { initial: ["A", 40], player: "Federer",  result: ["Winner", 30] },
+            { initial: ["A", 40], player: "Federer",  result: ["Winner", 40] },
             { initial: ["A", 40], player: "Nadal",    result: "Deuce" }
         ]
 
